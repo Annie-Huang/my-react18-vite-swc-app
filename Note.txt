@@ -1,0 +1,17 @@
+
+
+---------------------------------------------------------------------------
+
+PS C:\Temp> npm create vite@latest my-react18-vite-swc-app
+√ Select a framework: » React
+√ Select a variant: » TypeScript + SWC
+
+Scaffolding project in C:\Temp\my-react18-vite-swc-app...
+
+Done. Now run:
+
+  cd my-react18-vite-swc-app
+  npm install
+  npm run dev
+
+PS C:\Temp>
