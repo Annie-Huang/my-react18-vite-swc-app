@@ -1,5 +1,22 @@
 
+https://www.npmjs.com/package/vite-bundle-visualizer
+https://stackoverflow.com/questions/75746767/is-there-any-bundle-analyzer-for-vite
+https://www.npmjs.com/package/rollup-plugin-visualizer
 
+https://stackoverflow.com/questions/76351538/jest-testing-with-vite
+https://jestjs.io/docs/getting-started#using-vite
+https://saucelabs.com/resources/blog/vitest-vs-jest-comparison
+https://dev.to/mbarzeev/from-jest-to-vitest-migration-and-benchmark-23pl
+
+!!! https://dev.to/teyim/effortless-testing-setup-for-react-with-vite-typescript-jest-and-react-testing-library-1c48
+!!! https://github.com/teyim/Vite-test-setup
+https://dev.to/hannahadora/jest-testing-with-vite-and-react-typescript-4bap
+https://zaferayan.medium.com/how-to-setup-jest-and-react-testing-library-in-vite-project-2600f2d04bdd
+https://github.com/ozcanzaferayan/vite-jest-integration/commit/68af95d37849d7cfc6fbd5b005b6e8481896e287
+
+
+
+https://mui.com/material-ui/getting-started/installation/
 ---------------------------------------------------------------------------
 
 PS C:\Temp> npm create vite@latest my-react18-vite-swc-app
@@ -15,3 +32,79 @@ Done. Now run:
   npm run dev
 
 PS C:\Temp>
+
+------------------
+
+PS C:\Temp\my-react18-vite-app> npm i vite-bundle-visualizer
+PS C:\Temp\my-react18-vite-app> npm run build
+
+PS C:\Temp\my-react18-vite-app> npm install @mui/material @emotion/react @emotion/styled
+
+Set up Jest:
+PS C:\Temp\my-react18-vite-app> npm install -D @testing-library/react @testing-library/jest-dom @testing-library/user-event @types/jest
+PS C:\Temp\my-react18-vite-app> npm install -D ts-jest
+PS C:\Temp\my-react18-vite-app> npm install -D jest-environment-jsdom
+PS C:\Temp\my-react18-vite-app> npm install -D ts-node
+PS C:\Temp\my-react18-vite-app> npm install -D identity-obj-proxy
+PS C:\Temp\my-react18-vite-app> npm install -D jest-transformer-svg
+------------------
+
+PS C:\Temp\my-react18-vite-app> npm run build
+
+> my-react18-vite-app@0.0.0 build
+> tsc && vite build                 <--- !!! This will run lint as well....
+
+vite v5.2.10 building for production...
+✓ 34 modules transformed.
+dist/index.html                   0.46 kB │ gzip:  0.30 kB
+dist/assets/react-CHdo91hT.svg    4.13 kB │ gzip:  2.14 kB
+dist/assets/index-DiwrgTda.css    1.39 kB │ gzip:  0.72 kB
+dist/assets/index-MJNRYYyu.js   143.39 kB │ gzip: 46.10 kB
+✓ built in 1.03s
+PS C:\Temp\my-react18-vite-app>
+
+---- After clean up ----------
+144kb:
+
+PS C:\Temp\my-react18-vite-app> npm run build
+
+> my-react18-vite-app@0.0.0 build
+> tsc && vite build
+
+vite v5.2.10 building for production...
+✓ 32 modules transformed.
+dist/index.html                  0.39 kB │ gzip:  0.27 kB
+dist/assets/index-C4sXy6qE.js  142.69 kB │ gzip: 45.80 kB
+✓ built in 1.00s
+
+-------------
+Add Buttons
+336KB
+
+vite v5.2.10 building for production...
+✓ 320 modules transformed.
+dist/index.html                  0.39 kB │ gzip:  0.27 kB
+dist/assets/index-BFwxL-X6.js  229.71 kB │ gzip: 75.74 kB
+✓ built in 2.44s
+
+-------------
+Add Tabs
+
+vite v5.2.10 building for production...
+✓ 390 modules transformed.
+dist/index.html                  0.39 kB │ gzip:  0.27 kB
+dist/assets/index-_jVC39I_.js  253.14 kB │ gzip: 83.02 kB
+✓ built in 2.84s
+
+---------------
+Add Jest:
+
+vite v5.2.10 building for production...
+✓ 391 modules transformed.
+dist/index.html                   0.46 kB │ gzip:  0.30 kB
+dist/assets/react-CHdo91hT.svg    4.13 kB │ gzip:  2.14 kB
+dist/assets/index-CSyeRs2F.css    0.03 kB │ gzip:  0.05 kB
+dist/assets/index-BAsN5u0r.js   252.99 kB │ gzip: 82.84 kB
+✓ built in 2.94s
+PS C:\Temp\my-react18-vite-swc-app>
+
