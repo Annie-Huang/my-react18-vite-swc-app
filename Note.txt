@@ -1,4 +1,6 @@
 
+How to Add Pattern Masking in Input Controls in React | React Input Control Pattern Masking Example
+(https://www.youtube.com/watch?v=j84SDPFup0s)
 
 ---------------------------------------------------------------------------
 
