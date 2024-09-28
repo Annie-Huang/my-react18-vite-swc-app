@@ -19,3 +19,4 @@ PS C:\Temp>
 ----------------------------------------------------------------------------
 
 PS C:\Temp\my-react18-vite-swc-app> npm i react-imask
+PS C:\Temp\my-react18-vite-swc-app> npm i bootstrap
