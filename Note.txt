@@ -16,7 +16,11 @@ Done. Now run:
 
 PS C:\Temp>
 
+---------------------------------------------------------------------------
 
+Sandbox: https://codesandbox.io/p/sandbox/react-hook-form-with-ui-library-ts-forked-qjgkx:
 PS C:\Temp\my-react18-vite-swc-app> npm install react-hook-form
 PS C:\Temp\my-react18-vite-swc-app> npm install @material-ui/core   << not working with react 18, didn't install this...
 PS C:\Temp\my-react18-vite-swc-app> npm install @mui/material @emotion/react @emotion/styled
+PS C:\Temp\my-react18-vite-swc-app> npm install antd
+PS C:\Temp\my-react18-vite-swc-app> npm install react-select
