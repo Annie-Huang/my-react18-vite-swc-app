@@ -1,4 +1,4 @@
-
+https://react-hook-form.com/get-started#IntegratingwithUIlibraries
 
 ---------------------------------------------------------------------------
 
@@ -15,3 +15,8 @@ Done. Now run:
   npm run dev
 
 PS C:\Temp>
+
+
+PS C:\Temp\my-react18-vite-swc-app> npm install react-hook-form
+PS C:\Temp\my-react18-vite-swc-app> npm install @material-ui/core   << not working with react 18, didn't install this...
+PS C:\Temp\my-react18-vite-swc-app> npm install @mui/material @emotion/react @emotion/styled
