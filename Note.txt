@@ -25,12 +25,20 @@ PS C:\Temp\my-react18-vite-swc-app> npm install @material-ui/core   << not worki
 PS C:\Temp\my-react18-vite-swc-app> npm install @mui/material @emotion/react @emotion/styled
 PS C:\Temp\my-react18-vite-swc-app> npm install antd
 PS C:\Temp\my-react18-vite-swc-app> npm install react-select
+PS C:\Temp\my-react18-vite-swc-app> npm install react-input-mask
 
 Form2
 Sandbox: https://codesandbox.io/p/sandbox/usecontroller-forked-4t8cx
 Form3
 Sandbox: https://codesandbox.io/p/sandbox/react-hook-form-controlled-mixed-with-uncontrolled-forked-c323j?file=%2Fsrc%2Findex.js%3A25%2C5-25%2C13
 
+
+
+
+
+
 Form1: normal
 Form2: Using Hooks API
 Form3: Custom Register for uncontrolled component. (Most of Most UI libraries are built to support only controlled components, such as MUI and Antd. But with React Hook Form, the re-rendering of controlled components are also optimized.)
+
+
