@@ -13,7 +13,11 @@ interface IFormInput {
 }
 
 export const Form1 = () => {
-  const { control, handleSubmit } = useForm<IFormInput>();
+  const {
+    control,
+    handleSubmit,
+    formState: { isValid },
+  } = useForm<IFormInput>();
 
   const onSubmit = (data: IFormInput) => {
     // alert(JSON.stringify(data));
@@ -23,10 +27,16 @@ export const Form1 = () => {
   console.log('control=', control);
 
   return (
-    <form onSubmit={handleSubmit(onSubmit)} style={{ width: '600px' }}>
+    <form
+      onSubmit={handleSubmit(onSubmit)}
+      style={{ width: '600px', marginBottom: '50px' }}
+    >
       <label>First Name</label>
       <Controller
-        render={({ field }) => <Input {...field} className='materialUIInput' />}
+        render={({ field }) => {
+          console.log('firstName field =', field);
+          return <Input {...field} className='materialUIInput' />;
+        }}
         name='firstName'
         control={control}
         defaultValue=''
@@ -41,16 +51,19 @@ export const Form1 = () => {
       <label>Ice Cream Preference</label>
       <Controller
         name='iceCreamType'
-        render={({ field }) => (
-          <Select
-            {...field}
-            options={[
-              { value: 'chocolate', label: 'Chocolate' },
-              { value: 'strawberry', label: 'Strawberry' },
-              { value: 'vanilla', label: 'Vanilla' },
-            ]}
-          />
-        )}
+        render={({ field }) => {
+          console.log('iceCreamType field =', field);
+          return (
+            <Select
+              {...field}
+              options={[
+                { value: 'chocolate', label: 'Chocolate' },
+                { value: 'strawberry', label: 'Strawberry' },
+                { value: 'vanilla', label: 'Vanilla' },
+              ]}
+            />
+          );
+        }}
         control={control}
         defaultValue=''
       />
@@ -67,11 +80,13 @@ export const Form1 = () => {
         <Controller
           name='Checkbox'
           control={control}
+          // if you have the rules, then the submit button will disabled when loading....
+          // rules={{ required: true }}
           render={({ field }) => <Checkbox {...field} />}
         />
       </div>
 
-      <input type='submit' />
+      <input type='submit' disabled={!isValid} />
     </form>
   );
 };
