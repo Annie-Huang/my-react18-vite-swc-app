@@ -1,5 +1,8 @@
 https://react-hook-form.com/get-started#IntegratingwithUIlibraries
 
+https://www.npmjs.com/package/react-number-format
+https://s-yadav.github.io/react-number-format/docs/props/
+
 ---------------------------------------------------------------------------
 
 PS C:\Temp> npm create vite@latest my-react18-vite-swc-app
@@ -42,5 +45,7 @@ Form1: normal
 Form2: Using Hooks API
 Form3: Custom Register for uncontrolled component. (Most of Most UI libraries are built to support only controlled components, such as MUI and Antd. But with React Hook Form, the re-rendering of controlled components are also optimized.)
 Form4: react-input-mask (not sure why Date2 and Date3 will auto triggered even when i click into other input field)
+       react-number-format (https://s-yadav.github.io/react-number-format/docs/props/)
+       react-maskedinput << decided not to use this as the last publish time is 7 years ago. https://www.npmjs.com/package/react-maskedinput
 
 
