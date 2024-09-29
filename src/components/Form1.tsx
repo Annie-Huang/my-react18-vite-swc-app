@@ -27,10 +27,7 @@ export const Form1 = () => {
   console.log('control=', control);
 
   return (
-    <form
-      onSubmit={handleSubmit(onSubmit)}
-      style={{ width: '600px', marginBottom: '50px' }}
-    >
+    <form onSubmit={handleSubmit(onSubmit)} style={{ width: '600px' }}>
       <label>First Name</label>
       <Controller
         render={({ field }) => {

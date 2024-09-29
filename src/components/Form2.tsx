@@ -24,6 +24,7 @@ function Input(props: UseControllerProps) {
   );
 }
 
+// Using Hooks API
 export const Form2 = () => {
   const { handleSubmit, control } = useForm<FormValues>({
     defaultValues: {
