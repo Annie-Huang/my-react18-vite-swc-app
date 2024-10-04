@@ -49,3 +49,14 @@ Form4: react-input-mask (not sure why Date2 and Date3 will auto triggered even w
        react-maskedinput << decided not to use this as the last publish time is 7 years ago. https://www.npmjs.com/package/react-maskedinput
 
 
+react-input-mask    7.4 stars     5 years ago   445.273 download    105 issues  112 KB
+react-text-mask     8.9 stars     2 years ago   297,324 download    268 issues  48.8 KB
+imaskjs             8.3 stars
+@react-input/mask                 14 days ago   34,346 download     10 issues   63.7 KB
+react-number-format               1 month ago   1,153,867 download  193 issues  240 KB
+react-imask                       4 months ago  313,035 download    42 issues   124 KB
+
+
+https://stackoverflow.com/questions/61839197/trying-to-use-react-hook-form-in-combination-with-react-input-mask
+
+
